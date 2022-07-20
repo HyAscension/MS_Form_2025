@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ms_form.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Microsoft Form</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+    </style>
 </head>
 <body>
     <section class="header">
+        <div class="sliding-background"></div>
         <nav>
-            <a href="index.html"><img src="" alt=""></a>
+            <a href="index.html"><img src="img/ms_form.png" alt=""></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -24,11 +29,43 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="text-box">
-            <h1>MS Forms</h1>
-            <p>Reinventing the structure of forms.</p>
-            <a href="" class="hero-btn">New Form</a>
+        <div class="container">
+            <div class="box">
+                <div class="title">
+                    <span class="block"></span>
+                    <h1>Microsoft Forms 2025<span></span></h1>
+                </div>
+        
+                <div class="role">
+                    <div class="block"></div>
+                    <p>Reinvent the concept of forms.</p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!---------- Footer ---------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua.</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/hyvogia/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/hy-vo-8a0843227/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Made by Hy Vo, title credits go to Kaio Almeida</p>
+    </section>
+
+    <!-- Javascript for Popup Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
